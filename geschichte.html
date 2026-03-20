@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lettland</title>
+    
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="topbar">
+    <div>Lettland</div>
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menü</button>
+</div>
+
+<div class="layout">
+
+<div id="sidebar" class="sidebar">
+    <div class="sidebar-title">Inhalt</div>
+    <a href="/Lettland-Karte-HeriWM/uebersicht" onclick="closeMenu()">Übersicht</a>
+    <a href="/Lettland-Karte-HeriWM/geschichte" onclick="closeMenu()">Geschichte</a>
+    <a href="/Lettland-Karte-HeriWM/traditionen" onclick="closeMenu()">Traditionen</a>
+    <a href="/Lettland-Karte-HeriWM/musik" onclick="closeMenu()">Musik</a>
+    <a href="/Lettland-Karte-HeriWM/spezialitaeten" onclick="closeMenu()">Spezialitäten</a>
+    <a href="/Lettland-Karte-HeriWM/kleidung" onclick="closeMenu()">Kleidung</a>
+    <a href="/Lettland-Karte-HeriWM/politik" onclick="closeMenu()">Politik</a>
+</div>
+
+<div class="content">
+
+<h1>Geschichte</h1>
+<p><strong>Lettland</strong> ist ein Staat im Baltikum in Nordeuropa. Das Land grenzt an Estland, Litauen, Russland und Belarus. Die Hauptstadt ist Riga. Lettland ist Mitglied der Europäischen Union und der NATO.</p>
+<p>Lettland besitzt eine reiche Geschichte und eine vielfältige Kultur. Besonders bekannt ist das Land für seine weiten Wälder, seine Ostseeküste und seine historischen Städte.</p>
+
+</div>
+
+<script>
+function toggleMenu(){
+    document.getElementById("sidebar").classList.toggle("open");
+}
+
+function closeMenu(){
+    if(window.innerWidth <= 768){
+        document.getElementById("sidebar").classList.remove("open");
+    }
+}
+</script>
+
+</body>
+</html>
